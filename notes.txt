@@ -1,0 +1,7 @@
+COLOUR:
+- #B31312 (Dark red)
+- #7E1717 (Darker red)
+- #F2CD41 (Noodles yellow)
+- #FCF5ED (White)
+- #000000 (Black)
+- Whitesmoke
