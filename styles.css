@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: "Ramen Hot";
     src: url(font/ramen-hot.ttf);
@@ -11,6 +12,7 @@ body {
     display: flex;
     margin: 0;
     height: 100vh;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 body > div:first-child {
