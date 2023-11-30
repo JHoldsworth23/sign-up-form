@@ -19,7 +19,7 @@ body > div:first-child {
     position: relative;
     color: whitesmoke;
     width: var(--width-image);
-    background-image: url("image/background/denys-nevozhai-D68ADLeMh5Q-unsplash.jpg");
+    background-image: url("image/background/japanese-street.jpg");
     background-size: cover;
     background-position: center;
 }
