@@ -1,3 +1,7 @@
+:root {
+    --width-image: 40vw;
+}
+
 body {
     display: flex;
     margin: 0;
@@ -7,13 +11,14 @@ body {
 body > div:first-child {
     background-color: red;
     color: whitesmoke;
-    width: 60vw;
+    width: var(--width-image);
     background-image: url("image/background/denys-nevozhai-D68ADLeMh5Q-unsplash.jpg");
     background-size: cover;
     background-position: center;
 }
 
-div {
+.form-section {
+    width: calc(100% - var(--width-image));
     padding: 20px;
     background-color: blue;
     color: whitesmoke;
