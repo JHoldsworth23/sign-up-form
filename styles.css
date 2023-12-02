@@ -25,6 +25,8 @@ body > div:first-child {
 }
 
 .title-div {
+    position: absolute;
+    top: 250px;
     background-color: rgb(0, 0, 0, 0.6);
     display: flex;
     justify-content: flex-start;
@@ -45,7 +47,13 @@ img[src*="logo"] {
     color: #FDFDFD;
 }
 
-
+.title-div + p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 96vh;
+}
 
 .form-section {
     width: calc(100% - var(--width-image));
