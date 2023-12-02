@@ -55,6 +55,14 @@ img[src*="logo"] {
     margin-top: 96vh;
 }
 
+a[href*="unsplash"] {
+    color: #FDDC01;
+}
+
+a[href*="unsplash"]:hover {
+    color: #E30613;
+}
+
 .form-section {
     width: calc(100% - var(--width-image));
     padding: 20px;
