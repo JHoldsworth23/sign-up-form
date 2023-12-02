@@ -32,6 +32,7 @@ body > div:first-child {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 img[src*="logo"] {
