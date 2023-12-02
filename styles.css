@@ -72,4 +72,6 @@ a[href*="unsplash"]:hover {
     width: calc(100% - var(--width-image));
     padding: 20px;
     background-color: #FCF5ED;
+
+    font-size: 1.25rem;
 }
