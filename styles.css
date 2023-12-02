@@ -24,7 +24,7 @@ body > div:first-child {
     background-position: center;
 }
 
-.title {
+.title-div {
     background-color: rgb(0, 0, 0, 0.6);
     display: flex;
     justify-content: flex-start;
@@ -32,18 +32,20 @@ body > div:first-child {
     flex-wrap: wrap;
 }
 
-h1 {
+img[src*="logo"] {
+    width: 144px;
+    padding: 30px;
+    margin: 0 50px;
+}
+
+.title {
     font-family: "Ramen Hot", sans-serif;
     font-size: 3rem;
     letter-spacing: 3.5px;
     color: #FDFDFD;
 }
 
-img[src*="logo"] {
-    width: 144px;
-    padding: 30px;
-    margin: 0 50px;
-}
+
 
 .form-section {
     width: calc(100% - var(--width-image));
