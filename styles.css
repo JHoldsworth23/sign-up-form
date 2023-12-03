@@ -140,5 +140,19 @@ input {
 fieldset + p {
     font-size: 1rem;
     padding-left: 12px;
-    margin-top: 2px;
+    margin: 6px 0 14px;
+}
+
+button {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+    width: 150px;
+    padding: 8px;
+    margin: 0 40px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+
+    cursor: pointer;
 }
