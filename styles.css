@@ -78,8 +78,29 @@ a[href*="unsplash"]:hover {
 
 .form-section > div {
     width: 70%;
+    font-size: 1.4rem;
 }
 
 h2 {
     letter-spacing: 4px;
+}
+
+fieldset {
+    width: 40%;
+}
+
+fieldset > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: 1.2rem;
 }
