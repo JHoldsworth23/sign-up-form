@@ -150,9 +150,13 @@ button {
 
     width: 150px;
     padding: 8px;
-    margin: 0 40px;
     border: 2px solid #000000;
     border-radius: 30px;
 
     cursor: pointer;
+}
+
+button:hover {
+    color: #FCF5ED;
+    background-color: #E30613;
 }
