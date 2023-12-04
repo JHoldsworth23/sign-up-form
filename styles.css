@@ -76,7 +76,7 @@ a[href*="unsplash"]:hover {
     font-size: 1.25rem;
 }
 
-.form-section > div {
+.form-section div {
     width: 70%;
     font-size: 1.4rem;
 }
@@ -126,10 +126,6 @@ fieldset p {
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 12px 12px;
-}
-
-label {
-    font-size: 1.4rem;
 }
 
 input {
