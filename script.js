@@ -14,6 +14,15 @@ inputElements.forEach(input => {
     });
 });
 
+function validateForm(input) {
+    return input.checkValidity();
+}
+
 submit.addEventListener("click", () => {
-    console.log("you clicked the button!");
+    let inputArray = Array.from(inputElements);
+    if (inputArray.every(validateForm)) {
+        console.log("Your form is valid!");
+    } else {
+        // Find the input that is invalid
+    }
 });
