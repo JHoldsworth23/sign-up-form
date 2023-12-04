@@ -1,4 +1,5 @@
 const inputElements = document.querySelectorAll("input");
+const submit = document.querySelector("button");
 
 inputElements.forEach(input => {
     input.addEventListener('change', (e) => {
@@ -11,4 +12,8 @@ inputElements.forEach(input => {
             e.target.classList.add("valid");
         }
     });
+});
+
+submit.addEventListener("click", (e) => {
+    console.log("you clicked the button!");
 });
