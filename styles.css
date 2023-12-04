@@ -113,7 +113,7 @@ img[alt="ramen"] {
 fieldset > div {
     display: flex;
     justify-content: flex-start;
-    gap: 10%;
+    gap: 6%;
 }
 
 fieldset p {
@@ -127,6 +127,21 @@ fieldset p {
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 12px 12px;
+}
+
+label + div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+span::after {
+    background-image: url(image/narutomaki.png);
+    background-size: 45px 45px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    content: "";
 }
 
 input {
