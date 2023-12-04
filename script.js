@@ -2,6 +2,7 @@ const inputElements = document.querySelectorAll("input");
 const formSection = document.querySelector(".form-section");
 const password = document.querySelector("#pwd");
 const passwordConfirmation = document.querySelector("#pwd-confirm");
+const passwordAlert = document.querySelector("#pwd-alert");
 const submit = document.querySelector("#submit-btn");
 
 inputElements.forEach(input => {
@@ -20,12 +21,14 @@ inputElements.forEach(input => {
 });
 
 passwordConfirmation.addEventListener("change", (e) => {
-    if (password.value === e.target.value) {
-        console.log("Password is matched!")
-    } else {
-        console.log("Password is not matched!");
+    if (password.value !== e.target.value) {
+        passwordAlert.textContent = "* Passwords do not match";
+        password.classList.replace("valid", "invalid");
+        password.value = '';
+        e.target.classList.replace("valid", "invalid");
+        e.target.value = '';
     }
-})
+});
 
 function validateForm(input) {
     return input.checkValidity();
