@@ -1,4 +1,5 @@
 const inputElements = document.querySelectorAll("input");
+const formSection = document.querySelector(".form-section");
 const submit = document.querySelector("#submit-btn");
 
 inputElements.forEach(input => {
