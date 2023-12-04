@@ -129,20 +129,25 @@ fieldset p {
     margin: 0 12px 12px;
 }
 
+input:focus {
+    border-color: #000000;
+    border-radius: 8px;
+}
+
 label + div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-span::after {
+/* span::after {
     background-image: url(image/narutomaki.png);
     background-size: 45px 45px;
     display: inline-block;
     width: 45px;
     height: 45px;
     content: "";
-}
+} */
 
 input {
     font-size: calc(var(--font-size) - 0.2rem);
