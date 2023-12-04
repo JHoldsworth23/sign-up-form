@@ -134,6 +134,12 @@ input:focus {
     border-radius: 8px;
 }
 
+.valid {
+    border: none;
+    outline: 2px solid green;
+    border-radius: 8px;
+}
+
 label + div {
     display: flex;
     justify-content: flex-start;
