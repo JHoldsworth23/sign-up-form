@@ -145,7 +145,7 @@ fieldset + p {
 
 button {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
 
     width: 150px;
@@ -159,4 +159,18 @@ button {
 button:hover {
     color: #FCF5ED;
     background-color: #E30613;
+}
+
+.form-section > div:last-child p {
+    font-size: 1.25rem;
+    margin: -32px 8px 0;
+}
+
+a[href="#"] {
+    color: #E30613;
+    margin-left: 6px;
+}
+
+a[href="#"]:hover {
+    color: #FDDC01;
 }
