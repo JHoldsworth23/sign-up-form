@@ -43,9 +43,11 @@ submit.addEventListener('click', () => {
         console.log('Your form is valid!');
     } else {
         inputArray.forEach(function (inputHTML, index) {
+            const spanArray = Array.from(document.querySelectorAll('.invalid-image'));
             if (inputHTML.className === 'invalid') {
-                const span = document.createElement('span');
-                inputHTML.append(span);
+                spanArray[index].style.setProperty('--narutomaki', 'url(image/narutomaki.png)');
+            } else {
+                spanArray[index].style.setProperty('--narutomaki', 'none');
             }
         })
     }
