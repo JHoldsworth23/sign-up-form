@@ -129,6 +129,10 @@ fieldset p {
     margin: 0 12px 12px;
 }
 
+fieldset > div:not(:last-child) .user-input:nth-child(even) {
+    margin-left: -32px;
+}
+
 input:focus {
     border-color: #000000;
     border-radius: 8px;
@@ -159,14 +163,14 @@ label + div {
     align-items: center;
 }
 
-/* span::after {
-    background-image: url(image/narutomaki.png);
+.invalid-image::after {
+    background-image: var(--narutomaki);
     background-size: 45px 45px;
     display: inline-block;
     width: 45px;
     height: 45px;
     content: "";
-} */
+}
 
 input {
     font-size: calc(var(--font-size) - 0.2rem);
