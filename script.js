@@ -6,6 +6,8 @@ const passwordConfirmation = document.querySelector('#pwd-confirm');
 const passwordAlert = document.querySelector('#pwd-alert');
 const submit = document.querySelector('#submit-btn');
 
+const FORM = formSection.innerHTML;
+
 inputElements.forEach(input => {
     input.addEventListener('invalid', (e) => {
         e.target.classList.remove('valid');
@@ -48,5 +50,13 @@ submit.addEventListener('click', () => {
                 spanArray[index].style.setProperty('--narutomaki', 'none');
             }
         })
+    } else {
+        formSection.innerHTML = `
+          <div id="form-completed">
+            <h2>Thank you!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident delectus commodi ad debitis facere atque eum architecto et unde vero saepe nemo, ab, pariatur perferendis similique libero error. Minima?</p>
+            <button type="submit" id="home">Return</button>
+          </div>
+        `;
     }
 });
