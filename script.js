@@ -39,9 +39,7 @@ function validateForm(input) {
 
 submit.addEventListener('click', () => {
     let inputArray = Array.from(inputElements);
-    if (inputArray.every(validateForm)) {
-        console.log('Your form is valid!');
-    } else {
+    if (!inputArray.every(validateForm)) {
         inputArray.forEach(function (inputHTML, index) {
             const spanArray = Array.from(document.querySelectorAll('.invalid-image'));
             if (inputHTML.className === 'invalid') {
