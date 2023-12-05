@@ -1,5 +1,6 @@
 const inputElements = document.querySelectorAll('input');
 const formSection = document.querySelector('.form-section');
+const divArray = Array.from(document.querySelectorAll('label + div'));
 const password = document.querySelector('#pwd');
 const passwordConfirmation = document.querySelector('#pwd-confirm');
 const passwordAlert = document.querySelector('#pwd-alert');
