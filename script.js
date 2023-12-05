@@ -41,6 +41,11 @@ submit.addEventListener('click', () => {
     if (inputArray.every(validateForm)) {
         console.log('Your form is valid!');
     } else {
-        // Find the input that is invalid
+        inputArray.forEach(function (inputHTML, index) {
+            if (inputHTML.className === 'invalid') {
+                const span = document.createElement('span');
+                inputHTML.append(span);
+            }
+        })
     }
 });
