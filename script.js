@@ -1,12 +1,9 @@
 const inputElements = document.querySelectorAll('input');
 const formSection = document.querySelector('.form-section');
-const divArray = Array.from(document.querySelectorAll('label + div'));
 const password = document.querySelector('#pwd');
 const passwordConfirmation = document.querySelector('#pwd-confirm');
 const passwordAlert = document.querySelector('#pwd-alert');
 const submit = document.querySelector('#submit-btn');
-
-const FORM = formSection.innerHTML;
 
 inputElements.forEach(input => {
     input.addEventListener('invalid', (e) => {
@@ -44,11 +41,9 @@ submit.addEventListener('click', () => {
     if (!inputArray.every(validateForm)) {
         inputArray.forEach(function (inputHTML, index) {
             const spanArray = Array.from(document.querySelectorAll('.invalid-image'));
-            if (inputHTML.className === 'invalid') {
-                spanArray[index].style.setProperty('--narutomaki', 'url(image/narutomaki.png)');
-            } else {
-                spanArray[index].style.setProperty('--narutomaki', 'none');
-            }
+            inputHTML.className === 'invalid' 
+            ? spanArray[index].style.setProperty('--narutomaki', 'url(image/narutomaki.png)') 
+            : spanArray[index].style.setProperty('--narutomaki', 'none');
         })
     } else {
         formSection.innerHTML = `
@@ -57,10 +52,5 @@ submit.addEventListener('click', () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident delectus commodi ad debitis facere atque eum architecto et unde vero saepe nemo, ab, pariatur perferendis similique libero error. Minima?</p>
           </div>
         `;
-
-        const returnForm = document.querySelector('#home');
-        returnForm.addEventListener('click', () => {
-            formSection.innerHTML = FORM;
-        })
     }
 });
