@@ -58,5 +58,10 @@ submit.addEventListener('click', () => {
             <button type="submit" id="home">Return</button>
           </div>
         `;
+
+        const returnForm = document.querySelector('#home');
+        returnForm.addEventListener('click', () => {
+            formSection.innerHTML = FORM;
+        })
     }
 });
