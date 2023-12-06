@@ -22,10 +22,21 @@ inputElements.forEach(input => {
     });
 });
 
-toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
+let getMode = localStorage.getItem('mode');
+if (getMode && getMode === 'dark') {
     root.classList.toggle('dark-mode');
+    toggle.classList.toggle('active');
+}
+
+toggle.addEventListener('click', () => {
+    root.classList.toggle('dark-mode');
+    if (!root.classList.contains('dark-mode')) {
+        return localStorage.setItem('mode', 'light');
+    }
+    localStorage.setItem('mode', 'dark');
 });
+
+toggle.addEventListener('click', () => toggle.classList.toggle('active'));
 
 passwordConfirmation.addEventListener('change', (e) => {
     if (password.value !== e.target.value) {
