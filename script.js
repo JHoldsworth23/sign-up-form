@@ -24,6 +24,11 @@ inputElements.forEach(input => {
 toggle.addEventListener('click', () => {
     const root = document.documentElement;
     const mode = root.className === 'dark' ? 'light' : 'dark';
+    if (mode === 'dark') {
+        toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    } else {
+        toggle.innerHTML = '<i class="fa-solid fa-sun"></i>'
+    }
     root.className = mode;
 });
 
