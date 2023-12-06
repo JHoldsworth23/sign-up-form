@@ -52,10 +52,9 @@ submit.addEventListener('click', () => {
         })
     } else {
         formSection.innerHTML = `
-          <div id="form-completed">
-            <h2>Thank you!</h2>
+          <div class="form-completed">
+            <h2 class="form-subheading">Thank you!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident delectus commodi ad debitis facere atque eum architecto et unde vero saepe nemo, ab, pariatur perferendis similique libero error. Minima?</p>
-            <button type="submit" id="home">Return</button>
           </div>
         `;
 
