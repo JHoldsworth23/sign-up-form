@@ -1,5 +1,6 @@
 const inputElements = document.querySelectorAll('input');
-const toggle = document.querySelector('#toggle');
+const toggle = document.querySelector('.toggle');
+const root = document.documentElement;
 const formSection = document.querySelector('.form-section');
 const password = document.querySelector('#pwd');
 const passwordConfirmation = document.querySelector('#pwd-confirm');
@@ -22,14 +23,8 @@ inputElements.forEach(input => {
 });
 
 toggle.addEventListener('click', () => {
-    const root = document.documentElement;
-    const mode = root.className === 'dark' ? 'light' : 'dark';
-    if (mode === 'dark') {
-        toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
-    } else {
-        toggle.innerHTML = '<i class="fa-solid fa-sun"></i>'
-    }
-    root.className = mode;
+    toggle.classList.toggle('active');
+    root.classList.toggle('dark-mode');
 });
 
 passwordConfirmation.addEventListener('change', (e) => {
