@@ -1,4 +1,5 @@
 const inputElements = document.querySelectorAll('input');
+const toggle = document.querySelector('#toggle');
 const formSection = document.querySelector('.form-section');
 const password = document.querySelector('#pwd');
 const passwordConfirmation = document.querySelector('#pwd-confirm');
@@ -18,6 +19,12 @@ inputElements.forEach(input => {
             e.target.classList.add('valid');
         }
     });
+});
+
+toggle.addEventListener('click', () => {
+    const root = document.documentElement;
+    const mode = root.className === 'dark' ? 'light' : 'dark';
+    root.className = mode;
 });
 
 passwordConfirmation.addEventListener('change', (e) => {

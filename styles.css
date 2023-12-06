@@ -9,6 +9,14 @@
     --font-size: 1.4rem;
 }
 
+:root.light {
+    --background-color: #FCF5ED; 
+}
+
+:root.dark {
+    --background-color: #1B1716;
+}
+
 body {
     display: flex;
     margin: 0;
@@ -72,7 +80,7 @@ a[href*="unsplash"]:hover {
 
     width: calc(100% - var(--width-image));
     padding: 40px;
-    background-color: #FCF5ED;
+    background-color: var(--background-color);
 
     font-size: calc(var(--font-size) - 0.15rem);
 }
