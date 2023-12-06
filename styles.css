@@ -214,3 +214,20 @@ a[href="#"] {
 a[href="#"]:hover {
     color: #FDDC01;
 }
+
+.form-completed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 18vh;
+    width: 60%;
+}
+
+.form-completed p {
+    line-height: 1.5;
+}
+
+.form-subheading { 
+    margin-left: 8px;
+}
