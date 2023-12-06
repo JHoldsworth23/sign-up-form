@@ -220,7 +220,7 @@ a[href="#"]:hover {
     flex-direction: column;
     justify-content: space-evenly;
 
-    height: 18vh;
+    height: 25vh;
     width: 60%;
 }
 
@@ -228,6 +228,6 @@ a[href="#"]:hover {
     line-height: 1.5;
 }
 
-.form-subheading { 
+.form-subheading, #return { 
     margin-left: 8px;
 }

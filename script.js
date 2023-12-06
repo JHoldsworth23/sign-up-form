@@ -50,7 +50,13 @@ submit.addEventListener('click', () => {
           <div class="form-completed">
             <h2 class="form-subheading">Thank you!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident delectus commodi ad debitis facere atque eum architecto et unde vero saepe nemo, ab, pariatur perferendis similique libero error. Minima?</p>
+            <button id="return">Return</button>
           </div>
         `;
+
+        const returnHome = document.querySelector('#return');
+        returnHome.addEventListener('click', () => {
+            window.location.reload();
+        });
     }
 });
