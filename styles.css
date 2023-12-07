@@ -57,7 +57,7 @@
 body {
     display: flex;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -154,9 +154,9 @@ legend {
 
 img[alt="ramen"] {
     position: absolute;
-    width: 8vw;
-    left: 70%;
-    bottom: 85%;
+    width: 155px;
+    left: 490px;
+    bottom: 330px;
 }
 
 fieldset > div {
