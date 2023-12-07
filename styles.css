@@ -293,3 +293,32 @@ a[href="#"]:hover {
         margin: -10px 0 20px;
     }
 }
+
+@media (max-width: 1120px) {      
+    body {
+        flex-direction: column;
+    }
+
+    body > div:first-child {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .title {
+        align-items: center;
+    }
+
+    .title-div {
+        top: 20%;
+    }
+
+    .title-div + p {
+        display: none;
+    }
+
+    .form-section {
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+    }
+}
