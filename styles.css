@@ -7,13 +7,18 @@
 :root {
     --width-image: 40vw;
     --font-size: 1.4rem;
-    --background-color: #FCF5ED;
-
+    --primary-color: #FCF5ED;
+    --secondary-color: #000000;
+    --link-color: #E30613;
+    --link-hover-color: #FDDC01;
     transition: all 0.5s ease-in-out;
 }
 
 :root.dark-mode {
-    --background-color: #1B1716;
+    --primary-color: #1B1716;
+    --secondary-color: #FCF5ED;
+    --link-color: #FDDC01;
+    --link-hover-color: #E30613;
 }
 
 .toggle {
@@ -112,8 +117,8 @@ a[href*="unsplash"]:hover {
 
     width: calc(100% - var(--width-image));
     padding: 40px;
-    background-color: var(--background-color);
-
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: calc(var(--font-size) - 0.15rem);
 }
 
@@ -130,22 +135,21 @@ fieldset {
     position: relative;
 
     width: max(60%, 650px);
-    border: 3px solid #000000;
+    border: 3px solid var(--secondary-color);
     border-radius: 20px;
 }
 
 legend {
     font-size: calc(var(--font-size) + 0.2rem);
     letter-spacing: 2px;
-    background-color: #000000;
-    color: #FCF5ED;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 6px 12px;
 }
 
 img[alt="ramen"] {
     position: absolute;
     width: 8vw;
-
     left: 70%;
     bottom: 80%;
 }
@@ -230,7 +234,7 @@ button {
 
     width: 150px;
     padding: 8px;
-    border: 2px solid #000000;
+    border: 2px solid var(--secondary-color);
     border-radius: 30px;
 
     cursor: pointer;
@@ -247,19 +251,18 @@ button:hover {
 }
 
 a[href="#"] {
-    color: #E30613;
+    color: var(--link-color);
     margin-left: 6px;
 }
 
 a[href="#"]:hover {
-    color: #FDDC01;
+    color: var(--link-hover-color);
 }
 
 .form-completed {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     height: 25vh;
     width: 60%;
 }
