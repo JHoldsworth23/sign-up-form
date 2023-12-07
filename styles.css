@@ -131,6 +131,11 @@ h2 {
     letter-spacing: 4px;
 }
 
+p em {
+    color: var(--link-color);
+    margin-right: 4px;
+}
+
 fieldset {
     position: relative;
 
