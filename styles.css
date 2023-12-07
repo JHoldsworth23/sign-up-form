@@ -32,7 +32,7 @@
     border: 2px solid #000000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin-left: 60%;
+    margin-left: min(75%, 600px);
 }
 
 .toggle::before {
@@ -319,7 +319,42 @@ a[href="#"]:hover {
     .form-section {
         width: 100%;
         align-items: center;
-        gap: 40px;
+        gap: 20px;
         padding: 40px 0;
+    }
+}
+
+@media (max-width: 960px) {
+    :root {
+        --font-size: 1.2rem;
+    }
+
+    img[src*="logo"] {
+        margin: 0 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .title-div {
+        top: 25%;
+    }
+    
+    fieldset {
+        width: 410px;
+    }
+
+    img[alt="ramen"] {
+        left: 270px;
+        bottom: 420px;
+    }
+
+    fieldset > div {
+        flex-direction: column;
+    }
+
+    fieldset > div:not(:last-child) .user-input:nth-child(even) {
+        margin-left: 12px;
     }
 }
