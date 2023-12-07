@@ -67,7 +67,10 @@ submit.addEventListener('click', () => {
         formSection.innerHTML = `
           <div class="form-completed">
             <h2 class="form-subheading">Thank you!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident delectus commodi ad debitis facere atque eum architecto et unde vero saepe nemo, ab, pariatur perferendis similique libero error. Minima?</p>
+            <p>
+              Thank you for signing up. We will email you shortly to find your nearest best-reviewed ramen 
+              restaurant. You will not regret it and still love going there after the first time.
+            </p>
             <button id="return">Return</button>
           </div>
         `;
