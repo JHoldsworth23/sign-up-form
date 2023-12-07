@@ -255,7 +255,7 @@ button:hover {
 
 .form-section > div:last-child p {
     font-size: calc(var(--font-size) - 0.15rem);
-    margin: 0 8px;
+    margin: 10px 8px;
 }
 
 a[href="#"] {
@@ -281,4 +281,15 @@ a[href="#"]:hover {
 
 .form-subheading, #return { 
     margin-left: 8px;
+}
+
+@media (max-width: 1755px) {
+    .title-div {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title {
+        margin: -10px 0 20px;
+    }
 }
