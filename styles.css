@@ -361,6 +361,12 @@ a[href="#"]:hover {
         width: 80%;
     }
 
+    button { 
+        position: relative;
+        top: 50%;
+        left: 30%;
+    }
+
     fieldset > div {
         flex-direction: column;
     }
