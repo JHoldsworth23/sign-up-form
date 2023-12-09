@@ -270,7 +270,7 @@ a[href="#"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 25vh;
+    min-height: 25vh;
     width: 60%;
 }
 
@@ -280,6 +280,10 @@ a[href="#"]:hover {
 
 .form-subheading, #return { 
     margin-left: 8px;
+}
+
+#return {
+    margin-top: 12px;
 }
 
 @media (max-width: 1755px) {
@@ -388,8 +392,12 @@ a[href="#"]:hover {
     }
 
     .form-completed {
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
+    }
+
+    .form-subheading {
+        font-size: 2rem;
     }
 
     #return {
