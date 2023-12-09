@@ -116,6 +116,7 @@ a[href*="unsplash"]:hover {
     justify-content: space-evenly;
 
     width: calc(100% - var(--width-image));
+    min-height: 50vh;
     padding: 40px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
