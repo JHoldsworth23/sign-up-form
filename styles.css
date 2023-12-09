@@ -336,8 +336,19 @@ a[href="#"]:hover {
         padding: 15px;
     }
 
+    .title-container {
+        position: relative;
+    }
+
+    .title-div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     .title {
         font-size: 2rem;
+        margin: 0 2px 12px;
     }
 
     .toggle {
@@ -349,8 +360,9 @@ a[href="#"]:hover {
     }
 
     img[alt="ramen"] {
-        left: 270px;
-        bottom: 420px;
+        width: 120px;
+        left: 200px;
+        bottom: 490px;
     }
 
     fieldset {
