@@ -331,17 +331,19 @@ a[href="#"]:hover {
     }
 
     img[src*="logo"] {
+        width: 100px;
         margin: 0 20px;
+        padding: 15px;
     }
 
     .title {
         font-size: 2rem;
     }
 
-    .title-div {
-        top: 25%;
+    .toggle {
+        margin-right: 50px;
     }
-    
+
     fieldset {
         width: 410px;
     }
