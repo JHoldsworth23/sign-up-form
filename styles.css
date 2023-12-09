@@ -114,7 +114,6 @@ a[href*="unsplash"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     width: calc(100% - var(--width-image));
     min-height: 50vh;
     padding: 40px;
@@ -139,7 +138,6 @@ p em {
 
 fieldset {
     position: relative;
-
     width: max(60%, 650px);
     border: 3px solid var(--secondary-color);
     border-radius: 20px;
@@ -375,7 +373,7 @@ a[href="#"]:hover {
         width: 80%;
     }
 
-    button { 
+    #submit-btn { 
         position: relative;
         top: 50%;
         left: 30%;
@@ -387,5 +385,14 @@ a[href="#"]:hover {
 
     fieldset > div:not(:last-child) .user-input:nth-child(even) {
         margin-left: 12px;
+    }
+
+    .form-completed {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #return {
+        margin-top: 20px;
     }
 }
