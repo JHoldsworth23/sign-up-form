@@ -351,6 +351,16 @@ a[href="#"]:hover {
         bottom: 420px;
     }
 
+    fieldset {
+        margin: auto;
+        width: 80%;
+    }
+
+    fieldset + p {
+        margin-left: 20px;
+        width: 80%;
+    }
+
     fieldset > div {
         flex-direction: column;
     }
