@@ -11,6 +11,7 @@
     --secondary-color: #000000;
     --link-color: #E30613;
     --link-hover-color: #FDDC01;
+    --invalid-color: #E30613;
     transition: all 0.5s ease-in-out;
 }
 
@@ -45,7 +46,8 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: #E30613;
+    border: 1px solid #000000;
+    background-color: #87CEEB;
 }
 
 .toggle.active:before {
@@ -195,7 +197,7 @@ input:focus {
 
 .invalid {
     border: none;
-    outline: 2px solid #E30613;
+    outline: 2px solid var(--invalid-color);
     margin: 2px;
 }
 
@@ -205,7 +207,7 @@ label[for^="pwd"] {
 
 #pwd-alert {
     font-size: calc(var(--font-size) - 0.4rem);
-    color: #E30613;
+    color: var(--invalid-color);
     margin-top: 6px;
 }
 
@@ -355,10 +357,6 @@ a[href="#"]:hover {
 
     .toggle {
         margin-right: 50px;
-    }
-
-    fieldset {
-        width: 410px;
     }
 
     img[alt="ramen"] {
